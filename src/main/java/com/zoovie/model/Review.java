@@ -1,4 +1,4 @@
-package com.zoovie;
+package com.zoovie.model;
 
 
 import lombok.AllArgsConstructor;
@@ -16,4 +16,8 @@ public class Review {
     @Id
     private ObjectId id;
     private String body;
+
+    public Review(String body) {
+        this.body = body;
+    }
 }
